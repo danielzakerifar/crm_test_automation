@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230209 09:18:06.486" rpa="false" schemaversion="3">
+<suite id="s1" name="Crm" source="C:\development\robot-scripts\first-script\tests\Crm.robot">
+<test id="s1-t1" name=" Should be able to add new customer" line="12">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230209 09:18:06.863" endtime="20230209 09:18:06.863"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230209 09:18:06.863" endtime="20230209 09:18:06.863"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Starring the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230209 09:18:06.864" level="INFO">Starring the test case!</msg>
+<status status="PASS" starttime="20230209 09:18:06.864" endtime="20230209 09:18:06.864"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://automationplayground.com/crm/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230209 09:18:06.865" level="INFO">Opening browser 'edge' to base url 'https://automationplayground.com/crm/'.</msg>
+<status status="PASS" starttime="20230209 09:18:06.864" endtime="20230209 09:18:10.255"/>
+</kw>
+<kw name="Set Window Position" library="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" starttime="20230209 09:18:10.256" endtime="20230209 09:18:10.593"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>width=1935</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20230209 09:18:10.594" endtime="20230209 09:18:10.965"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Customers Are Priority One</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230209 09:18:11.407" level="INFO">Current page contains text 'Customers Are Priority One'.</msg>
+<status status="PASS" starttime="20230209 09:18:10.966" endtime="20230209 09:18:11.407"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/ul/li/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:11.411" level="INFO">Clicking link 'xpath=/html/body/nav/ul/li/a'.</msg>
+<status status="PASS" starttime="20230209 09:18:11.409" endtime="20230209 09:18:12.431"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230209 09:18:12.928" level="INFO">Current page contains text 'Login'.</msg>
+<status status="PASS" starttime="20230209 09:18:12.432" endtime="20230209 09:18:12.928"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email-id</arg>
+<arg>admin@robotframeworktutorial.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:12.932" level="INFO">Typing text 'admin@robotframeworktutorial.com' into text field 'id=email-id'.</msg>
+<status status="PASS" starttime="20230209 09:18:12.930" endtime="20230209 09:18:13.920"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>test123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:13.922" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20230209 09:18:14.438" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230209 09:18:14.737" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230209 09:18:13.921" endtime="20230209 09:18:14.737"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:14.739" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20230209 09:18:14.738" endtime="20230209 09:18:16.263"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230209 09:18:19.265" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230209 09:18:16.264" endtime="20230209 09:18:19.265"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>id=new-customer</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:19.266" level="INFO">Clicking link 'id=new-customer'.</msg>
+<status status="PASS" starttime="20230209 09:18:19.265" endtime="20230209 09:18:20.247"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Add Customer</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230209 09:18:20.665" level="INFO">Current page contains text 'Add Customer'.</msg>
+<status status="PASS" starttime="20230209 09:18:20.247" endtime="20230209 09:18:20.665"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=EmailAddress</arg>
+<arg>jando@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:20.666" level="INFO">Typing text 'jando@gmail.com' into text field 'id=EmailAddress'.</msg>
+<status status="PASS" starttime="20230209 09:18:20.665" endtime="20230209 09:18:21.396"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=FirstName</arg>
+<arg>jane</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:21.397" level="INFO">Typing text 'jane' into text field 'id=FirstName'.</msg>
+<status status="PASS" starttime="20230209 09:18:21.396" endtime="20230209 09:18:22.101"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=LastName</arg>
+<arg>doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:22.101" level="INFO">Typing text 'doe' into text field 'id=LastName'.</msg>
+<status status="PASS" starttime="20230209 09:18:22.101" endtime="20230209 09:18:23.392"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=City</arg>
+<arg>Montreal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:23.393" level="INFO">Typing text 'Montreal' into text field 'id=City'.</msg>
+<status status="PASS" starttime="20230209 09:18:23.393" endtime="20230209 09:18:24.165"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=StateOrRegion</arg>
+<arg>TX</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230209 09:18:24.167" level="INFO">Selecting options from selection list 'id=StateOrRegion' by value TX.</msg>
+<status status="PASS" starttime="20230209 09:18:24.166" endtime="20230209 09:18:25.957"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>gender</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230209 09:18:25.958" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
+<status status="PASS" starttime="20230209 09:18:25.958" endtime="20230209 09:18:26.669"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>name=promos-name</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230209 09:18:26.670" level="INFO">Selecting checkbox 'name=promos-name'.</msg>
+<status status="PASS" starttime="20230209 09:18:26.670" endtime="20230209 09:18:27.769"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230209 09:18:30.770" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230209 09:18:27.769" endtime="20230209 09:18:30.770"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230209 09:18:30.772" endtime="20230209 09:18:33.185"/>
+</kw>
+<doc>this is some basic info about the test</doc>
+<tag>1006</tag>
+<tag>Contacts</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20230209 09:18:06.862" endtime="20230209 09:18:33.186"/>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" starttime="20230209 09:18:06.488" endtime="20230209 09:18:33.188"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">1006</stat>
+<stat pass="1" fail="0" skip="0">Contacts</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Crm">Crm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
